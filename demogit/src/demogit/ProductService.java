@@ -4,10 +4,19 @@
  */
 package demogit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author maccuacu
  */
-public class ProductService {
-    
+public class ProductService implements IService{
+    private  List<Products> listProducts = new ArrayList<>();
+
+    @Override
+    public List<Products> findAll() {
+return listProducts;
+    }
+
 }
