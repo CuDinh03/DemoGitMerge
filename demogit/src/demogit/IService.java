@@ -8,6 +8,7 @@ package demogit;
  *
  * @author maccuacu
  */
-public class IService {
-    
+public interface IService  {
+    List<Products>findAll();
+    String update(Products hihi);
 }
