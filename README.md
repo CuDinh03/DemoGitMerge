@@ -1,0 +1,2 @@
+# DemoGitMerge
+Demo mergecode
