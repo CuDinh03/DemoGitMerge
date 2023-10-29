@@ -16,7 +16,7 @@ public class ProductService implements IService {
     }
 
     public String update(Products hihi) {
-       if(p != null){
+       if(hihi != null){
            lp.update(hihi);
            return "Sửa thành công";
        }else{
