@@ -4,10 +4,13 @@
  */
 package demogit;
 
+import java.util.List;
+
 /**
  *
  * @author maccuacu
  */
-public class IService {
-    
+public interface IService {
+    List<Products>findAll();
+    String add(Products p);
 }
