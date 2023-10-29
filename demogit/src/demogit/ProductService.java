@@ -11,8 +11,19 @@ import java.util.List;
  *
  * @author maccuacu
  */
+     
 public class ProductService implements IService{
     List<Products> lp = new ArrayList<>();
+
+    public String update(Products hihi) {
+       if(hihi != null){
+           lp.update(hihi);
+           return "Sửa thành công";
+       }else{
+           return "Sửa thất bại";
+       }
+    }
+
 
     public ProductService() {
         lp.add(new Products(1, "SP1", "Đá"));
