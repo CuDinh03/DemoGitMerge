@@ -8,6 +8,19 @@ package demogit;
  *
  * @author maccuacu
  */
-public class ProductService {
-    
+public class ProductService implements IService {
+     List<Products> hihi = new ArrayList<>();
+    public ProductService() {
+        hihi.update(new Products(1,  "keo"));
+        hihi.update(new Products(2,  "mut")); 
+    }
+
+    public String update(Products hihi) {
+       if(p != null){
+           lp.update(hihi);
+           return "Sửa thành công";
+       }else{
+           return "Sửa thất bại";
+       }
+    }
 }
