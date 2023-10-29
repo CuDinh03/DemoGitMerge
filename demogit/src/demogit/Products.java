@@ -21,6 +21,7 @@ public class Products {
         this.name = name;
         this.status = status;
     }
+    
 
     public int getId() {
         return id;
@@ -45,6 +46,4 @@ public class Products {
     public void setStatus(String status) {
         this.status = status;
     }
-    
-    
 }
