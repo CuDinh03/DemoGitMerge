@@ -10,7 +10,8 @@ package demogit;
  */
 public class Products {
     private int id;
-    private String name,status;
+    private String name;
+    private String status;
 
     public Products() {
     }
@@ -20,7 +21,6 @@ public class Products {
         this.name = name;
         this.status = status;
     }
-
     
 
     public int getId() {
