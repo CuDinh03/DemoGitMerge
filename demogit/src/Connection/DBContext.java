@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class DBContext {
     public static String USER = "sa";
     public static String PASSWORD = "12345678";
-    public static String URL = "jdbc:sqlserver://localhost:1433;databaseName=Polypro;encrypt=true;trustServerCertificate=true";
+    public static String URL = "jdbc:sqlserver://localhost:1433;databaseName=demoGit;encrypt=true;trustServerCertificate=true";
 
     static {
         try {
