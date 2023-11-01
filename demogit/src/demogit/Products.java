@@ -9,31 +9,25 @@ package demogit;
  * @author maccuacu
  */
 public class Products {
-    private String id;
+    private int id;
     private String name;
     private String status;
-    private String date;
-    private byte TrangThai;
+
     public Products() {
     }
 
-    public Products(String id, String name, String status, String date, byte TrangThai) {
+    public Products(int id, String name, String status) {
         this.id = id;
         this.name = name;
         this.status = status;
-        this.date = date;
-        this.TrangThai = TrangThai;
     }
-
     
 
-    
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -52,24 +46,4 @@ public class Products {
     public void setStatus(String status) {
         this.status = status;
     }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public byte getTrangThai() {
-        return TrangThai;
-    }
-
-    public void setTrangThai(byte TrangThai) {
-        this.TrangThai = TrangThai;
-    }
-
-    
-
-    
 }
