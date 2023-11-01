@@ -82,7 +82,31 @@ public class ProductService implements IService {
 
     @Override
     public Integer update(Products p) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Integer row = null;
+        try {
+            
+            
+            cn = DBContext.getConnection();
+            String sql = "insert into SanPham(MaSanPham,Ten,NgayTao,GhiChu,TrangThai) values (?,?,getdate(),?,0)";
+            pstm = cn.prepareStatement(sql);
+            pstm.setString(1, p.getId());
+            pstm.setString(2, p.getName());
+            pstm.setString(3, p.getStatus());
+            row = pstm.executeUpdate();
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                cn.close();
+                pstm.close();
+                rs.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return row;
     }
 
     @Override
